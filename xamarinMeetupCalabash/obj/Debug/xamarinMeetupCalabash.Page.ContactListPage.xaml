@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="xamarinMeetupCalabash.ContactListPage">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Add" Command="{Binding AddNewContact}"/>
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<ScrollView Padding="20">
+			<StackLayout>
+				<Label StyleId="ContactList" HorizontalOptions="Center" Text="CONTACT LIST" FontAttributes="Bold"/>
+				<ListView StyleId="list_CarePlan_BGDet" ItemsSource="{Binding ContactList}" ItemTapped="ContactItemTapped" RowHeight="80">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell StyleId="ContactView">
+								<ViewCell.ContextActions>
+							       	<MenuItem Clicked="BGRmvBtnClicked" CommandParameter="{Binding PhoneNo}"
+							           Text="Delete" IsDestructive="True" />
+							   </ViewCell.ContextActions> 
+								<ViewCell.View >
+									<StackLayout>
+										<Label Text="{Binding Name}" FontAttributes="Bold"/>
+										<Label Text="{Binding PhoneNo}"/>
+										<Label Text="{Binding Address}"/>
+									</StackLayout>
+								</ViewCell.View>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

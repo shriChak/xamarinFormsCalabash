@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="iOS/xamarinMeetupCalabash.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.3" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/AppDelegate.cs">
+    <Files>
+      <File FileName="xamarinMeetupCalabash/ViewModel/ContactViewModel.cs" Line="1" Column="1" />
+      <File FileName="xamarinMeetupCalabash/Page/ContactListPage.xaml" Line="1" Column="1" />
+      <File FileName="xamarinMeetupCalabash/Page/ContactListPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="xamarinMeetupCalabash/Page/AddContactPage.xaml" Line="1" Column="1" />
+      <File FileName="xamarinMeetupCalabash/Page/AddContactPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="iOS/AppDelegate.cs" Line="31" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
